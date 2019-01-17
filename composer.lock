@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "66ca7343889332c2b8ecca11c251430c",
+    "content-hash": "767e3902edf01bd78c60ab4defb6f6c9",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -3105,6 +3105,63 @@
             "time": "2018-10-30T17:29:25+00:00"
         },
         {
+            "name": "vsb/locations",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vbushuev/get.locations",
+                "reference": "1ea6d4d52f52371e25d24dfccd2fe33cd344a9fa"
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "laravel/framework": "5.5.x"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "vsb\\Locations\\LocationServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "vsb\\": "src/test/"
+                }
+            },
+            "autoload-dev": {
+                "files": [
+                    "tests/fake.php"
+                ],
+                "psr-4": {
+                    "vsb\\Tests\\": "tests/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Vladimir Bushuev",
+                    "email": "v.bushuev@gmail.com"
+                }
+            ],
+            "description": "The test implement",
+            "homepage": "https://github.com/vbushuev",
+            "keywords": [
+                "Locations",
+                "laravel",
+                "test"
+            ],
+            "support": {
+                "issues": "https://github.com/vbushuev/get.location/issues",
+                "source": "https://github.com/vbushuev/get.location"
+            },
+            "time": "2019-01-17T18:37:36+00:00"
+        },
+        {
             "name": "zendframework/zend-diactoros",
             "version": "1.8.6",
             "source": {
@@ -4931,7 +4988,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "vsb/locations": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
